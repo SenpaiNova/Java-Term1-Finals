@@ -1,0 +1,134 @@
+@media only screen and (min-width: 768px) {
+    header {
+        padding: 0 5rem;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    nav ul {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, minmax(auto, 15rem));
+    }
+
+    .video {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .video-description {
+        align-self: center;
+    }
+
+    .coffee-serve {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .activities {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        'left left left'
+        'v-left b-left v-right'
+        'v-left b-right v-right'
+        'right right right';
+    }
+
+    .reviews {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        'one one two'
+        'three four two'
+        'three five five';
+    }
+
+    .review1 {
+        grid-area: one;
+    }
+
+    .review2 {
+        grid-area: two;
+    }
+
+    .review3 {
+        grid-area: three;
+    }
+
+    .review4 {
+        grid-area: four;
+    }
+
+    .review5 {
+        grid-area: five ;
+    }
+
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .address {
+        grid-column: 1 / span 2;
+    }
+
+    .btn {
+        grid-column: 2 / 3;
+    }
+
+    .layer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        grid-template-areas: 
+        't y u';
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1100px) {
+    header {
+        padding: 0 15rem;
+    }
+    
+    .banner {
+        place-items: center start;
+    }
+
+    .video {
+        width: 85%;
+        margin: auto;
+    }
+
+    .coffee-serve {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .coffee-serve-price:last-child {
+        grid-column: 2 / 3;
+    }
+
+    .activities {
+        grid-template-rows: repeat(5, 25rem);
+        grid-template-areas: 
+        'left left v-right'
+        'v-left right v-right'
+        'v-left right v-right'
+        'v-left b-left b-left'
+        'b-right b-right b-right';
+    }
+
+    .form {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .address {
+        grid-column: 3 / 4;
+        grid-row: 1 / span 2;
+    }
+}

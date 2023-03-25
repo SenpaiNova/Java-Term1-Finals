@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: silver;
+    color: #562B08;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Typography */
+h1 {
+    font-size: 4.8rem;
+    letter-spacing: .2rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+    letter-spacing: .1rem
+}
+h3 {
+    font-size: 2.4rem;
+}
+h4 {
+    font-size: 2rem;
+}
+h5 {
+    font-size: 1.8rem
+}
+p {
+    font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 1rem;
+}
+
+/* generic style */
+
+.logo {
+    padding: 1rem;
+}
+.logo img {
+    width: 64px;
+}
+.icon {
+    padding: 1rem;
+}
+i {
+    font-size: 4.8rem;
+    color: whitesmoke;
+}
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul li a {
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: .1rem;
+}
+
+
+.btn {
+    font-weight: 700;
+    letter-spacing: .2rem;
+    background: none;
+    color: whitesmoke;
+    border: none;
+    border-radius: 3rem;
+    padding: 1rem 4rem;
+    border: .1rem solid whitesmoke;
+}
+
+.btn:hover {
+    color: #562B08;
+    background-color: whitesmoke;
+    border: .1rem solid #562B08;
+}
+
+
+label, input, select, textarea {
+    display: block;
+    padding: .5rem;
+    resize: none;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+}

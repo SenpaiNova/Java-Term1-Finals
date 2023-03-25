@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLD TASTE</title>
+
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a5dfc6a3fa.js" crossorigin="anonymous"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+    <header class="flex shadow">
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+
+        <div class="nav">
+            <a href="#home" class="link">Home</a>
+            <a href="#coffee" class="link">Coffee</a>
+            <a href="#activity" class="link">Activity</a>
+            <a href="#review" class="link">Reviews</a>
+            <a href="#order" class="link">Order</a>
+        </div>
+
+        <a href="#" class="link" id="menuBtn"><ion-icon name="menu"></ion-icon></a>
+
+    </header>
+
+    <section class="sidenav" id="sidenav">
+        <a href="#home" class="link">Home</a>
+        <a href="#coffee" class="link">Coffee</a>
+        <a href="#activity" class="link">Activity</a>
+        <a href="#review" class="link">Reviews</a>
+        <a href="#order" class="link">Order</a>
+    </section>
+
+    <section class="banner">
+        <div class="banner-text">
+            <h4>NOW YOU CAN FEEL THE ENERGY</h4>
+            <h1>Start Your Day With Old Taste Coffee</h1>
+            <button class="btn">BUY NOW</button>
+        </div>
+    </section>
+
+    <section class="video">
+        <div class="video-frame">
+            <div class="overlay">
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+
+        <div class="video-description">
+            <h4>LIVE COFFEE MAKING PROCESS</h4>
+            <h2 class="section-title">We Telecast Our Coffee Making Live</h2>
+            <h5>We are here to listen from you to deliver excellence</h5>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam quod voluptate ratione maiores eligendi
+                expedita aliquam. Adipisci tempore dicta laudantium quibusdam possimus deserunt ea dolor.
+            </p>
+        </div>
+    </section>
+
+    <section id="coffee">
+        <h2>What kind of coffee we serve for you</h2>
+        <p>Hope any of these can be your favorite taste</p>
+
+        <div class="coffees-wrapper">
+
+            <!-- <div class="coffee-serve">
+                <article class="coffee-serve-price">
+                    <h4>Cappuccino</h4>
+                    <h5>$5</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam illo molestiae nihil quaerat nobis
+                    hic.
+                    </p>
+                </article>
+
+            </div> -->
+
+        </div>
+
+
+    </section>
+
+    <section id="activity" class="activity">
+        <h2>Here are some of our customers' activities</h2>
+        <p>Hope you have a nice time here</p>
+
+        <div class="activities">
+            <img class="left" src="./images/post1.jpeg" alt="">
+            <img class="right" src="./images/post2.jpeg" alt="">
+            <img class="v-left" src="./images/post9.jpeg" alt="">
+            <img class="v-right" src="./images/post10.jpeg" alt="">
+            <img class="b-left" src="./images/post3.jpeg" alt="">
+            <img class="b-right" src="./images/post7.jpeg" alt="">
+        </div>
+    </section>
+
+    <section id="review" class="customer-review">
+        <h2>Customer Reviews</h2>
+        <p>Here are what our customers said about us</p>
+
+        <div class="review-wrapper">
+
+            <!-- <div class="reviews">
+
+            <article class="review1">
+                <h4>John Doe1</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet itaque, doloribus rem magni facilis
+                    quo assumenda modi praesentium beatae sint!
+                </p>
+                <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <h5>Excellent</h5>
+
+            </article>
+            </div> -->
+
+        </div>
+        
+    </section>
+
+    <section id="order">
+        <h2>Get your order now</h2>
+        <form>
+            <div>
+                <label>
+                    Full Name
+                </label>
+                <input type="text" name="name" placeholder="Full Name" />
+            </div>
+            <div>
+                <label>
+                    Contact Number
+                </label>
+                <input type="tel" name="phone" placeholder="e.g +85512345678" />
+            </div>
+            <div>
+                <label>Coffee</label>
+                <select name="coffee">
+                    <option value="">Select your favorite coffee</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="americano">Americano</option>
+                    <option value="espresso">Espresso</option>
+                    <option value="macchiato">Macchiato</option>
+                    <option value="mocha">Mocha</option>
+                    <option value="coffee-lattee">Coffe Lattee</option>
+                    <option value="piccolo-lattee">Piccolo Lattee</option>
+                    <option value="ristretto">Ristretto</option>
+                    <option value="affogato">Affogato</option>
+                    <option value="nescafe">Nescafe</option>
+                </select>
+            </div>
+            <div>
+                <label>Amount</label>
+                <input type="number" name="amount" min="1" max="100" value="1">
+            </div>
+            <div class="address">
+                <label>Address</label>
+                <textarea name="address" placeholder="e.g st164 blvd norodom" cols="30" rows="5"></textarea>
+            </div>
+            <button class="btn primary" type="submit">Order Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="layer">
+            <div class="logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+
+            <div>
+                <h3>Thank for your support</h3>
+                <h2>&copy; All right reserved 2022</h2>
+            </div>
+
+            <div class="sns">
+                <i class="fa-brands fa-facebook-messenger"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-brands fa-weixin"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./script.js"></script>
+
+</body>
+</html>

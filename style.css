@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, input, button, textarea {
+    text-decoration: none;
+    border: none;
+    background: none;
+    display: inline-block;
+}
+  
+input:focus, textarea:focus {
+    outline: none;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav {
+    display: none;
+}
+
+.link {
+    font-size: 16px;
+    color: white;
+    padding: 5px;
+    font-weight: 300;
+    letter-spacing: 1.2;
+}
+  
+.custom-link {
+    font-weight: 400;
+    border-radius: 15px;
+    background-color: var(--link-bg);
+}
+  
+ion-icon {
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: end;
+    align-items: center;
+
+    height: 10rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.sidenav {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    display: grid;
+    place-content: center;
+    gap: 25px;
+    
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 500ms;
+
+}
+
+.sidenav a {
+    font-size: 24px;
+}
+  
+.showSidenav {
+    height: 400px;
+    padding: 25px;
+}
+
+.banner {
+    margin-top: -10rem;
+    height: 100vh;
+    background-image: url(images/top-banner.jpeg);
+    background-position: bottom center;
+    background-size: cover;
+    display: grid;
+    /* justify-items: center;
+    align-items: center; */
+    place-items: center;
+}
+
+.banner-text {
+    color: white;
+    padding: 0 5rem;
+}
+
+.video-frame {
+    background-image: url(images/post5.jpeg);
+    background-size: cover;
+    border-radius: 3rem;
+    height: 40vh;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    border-radius: 3rem;
+}
+
+.video {
+    height: 70rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30rem ;
+    gap: 4rem;
+    padding: 2rem;
+}
+
+.video-description {
+    margin-top: 20rem;
+}
+
+#coffee h2 {
+    margin-top: 4rem;
+}
+
+.coffee-serve-price {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 1.5rem;
+}
+
+.coffee-serve-price p {
+    grid-column: 1 / span 2;
+}
+
+.coffee-serve {
+    padding: 2.5rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.activities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 15rem);
+    gap: 1rem;
+    grid-template-areas: 
+    'left v-right'
+    'v-left v-right'
+    'v-left right'
+    'b-left b-right';
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+    grid-area: right;
+}
+
+.v-left {
+    grid-area: v-left;
+}
+
+.v-right {
+    grid-area: v-right;
+}
+
+.b-left {
+    grid-area: b-left;
+}
+
+.b-right {
+    grid-area: b-right;
+}
+
+.activities img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rating i {
+    color: yellow;
+    font-size: 2rem;
+}
+
+.review1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.review2 {
+    background-color: greenyellow;
+}
+
+.review3 {
+    background-color: violet;
+}
+
+.review4 {
+    background-color: goldenrod;
+}
+
+.review5 {
+    background-color: coral;
+}
+
+.reviews article {
+    border-radius: 1.5rem;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+}
+
+.reviews article h4,
+.reviews article p {
+    grid-column: 1 / span 2;
+}
+
+.reviews article h5 {
+    justify-self: end;
+}
+
+.reviews {
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+form {
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.primary {
+    color: black;
+    background-color: gainsboro;
+}
+
+.layer {
+    background-image: url(images/bottom-banner.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    't'
+    'y'
+    'u';
+}
+
+.layer h3, h2 {
+    color: white;
+    font-size: 18px;
+    margin: auto;
+}
+
+.logo {
+    grid-area: t;
+}
+
+.layer:nth-child(2) {
+    grid-area: y;
+}
+
+.sns {
+    grid-area: u;
+}
